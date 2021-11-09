@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Border-Sizing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .div {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body class="p-5 mt-5">
+    <h4>border verme border...border-top....border-start...border-end</h4>
+    <div class="div">
+        <span class="border p-5 bg-light me-5 mt-5"></span>
+        <span class="border-top p-5 bg-light me-5"></span>
+        <span class="border-end p-5 bg-light me-5"></span>
+        <span class="border-bottom p-5 bg-light me-5"></span>
+        <span class="border-start p-5 bg-light me-5"></span>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h4>border colorları border-primary.... <br>
+        border border-top-0 ile top hariç her yere border verme vs</h4>
+    <div class="div">
+        <span class="border border-primary bg-light me-5 p-5"></span>
+        <span class="border-0 border-secondary bg-light me-5 p-5"></span>
+        <span class="border border-top-0 border-success bg-light me-5 p-5"></span>
+        <span class="border border-bottom-0 border-danger bg-light me-5 p-5"></span>
+        <span class="border border-start-0 border-warning bg-light me-5 p-5"></span>
+        <span class="border border-end-0 border-info bg-light me-5 p-5"></span>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h4>border çizgi kalınlığı border-1....border-5</h4>
+
+    <div class="div">
+        <span class="border border-dark border-1 me-5 p-5"></span>
+        <span class="border border-dark border-2 me-5 p-5"></span>
+        <span class="border border-dark border-3 me-5 p-5"></span>
+        <span class="border border-dark border-4 me-5 p-5"></span>
+        <span class="border border-dark border-5 me-5 p-5"></span>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h4>köşelerin rounded olması rounded...rounded-top...rounded-end</h4>
+    <img src="avatar.png" alt="" class="border border-dark rounded" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-top" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-bottom" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-start" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-end" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-circle" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-pill" style="width: 200px; height: 100px;">
+
+    <br><br><br><br><br><br>
+
+    <h4>köşelerin rounded olma oranı rounded-0...rounded-3</h4>
+    <img src="avatar.png" alt="" class="border border-dark rounded-0" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-1" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-2" style="width: 200px;">
+    <img src="avatar.png" alt="" class="border border-dark rounded-3" style="width: 200px;">
+
+    <br><br><br><br><br><br>
+
+    <h4>sizing width</h4>
+
+    <div class="w-25 bg-dark p-5 text-white mb-1">w-25</div>
+    <div class="w-50 bg-dark p-5 text-white mb-1">w-50</div>
+    <div class="w-75 bg-dark p-5 text-white mb-1">w-75</div>
+    <div class="w-100 bg-dark p-5 text-white ">w-100</div>
+
+    <br><br><br><br><br><br>
+
+    <h4>sizing height</h4>
+    <div style="height: 100px;" class="bg-primary d-inline-block mt-0 pt-0">
+        <div style="width: 125px;" class="h-25 bg-dark text-white d-inline-block">h-25</div>
+        <div style="width: 125px;" class="h-50 bg-dark text-white d-inline-block">h-50</div>
+        <div style="width: 125px;" class="h-75 bg-dark text-white d-inline-block">h-75</div>
+        <div style="width: 125px;" class="h-100 bg-dark text-white d-inline-block">h-100</div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <h4>sizing max width max height mw-100 mh-100..</h4>
+
+    <br><br><br><br><br><br>
+
+    <h4>shadow none-sm-lg</h4>
+
+    <div class="rounded-1 p-5 d-inline-block me-5 shadow">shadow</div>
+    <div class="rounded-1 p-5 d-inline-block me-5 shadow-none">shadow-none</div>
+    <div class="rounded-1 p-5 d-inline-block me-5 shadow-sm">shadow-sm</div>
+    <div class="rounded-1 p-5 d-inline-block me-5 shadow-lg">shadow-lg</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
