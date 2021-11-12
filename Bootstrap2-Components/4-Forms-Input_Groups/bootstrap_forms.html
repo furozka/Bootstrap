@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="w-75 mx-auto my-4">
+    <h2>Form Owerview</h2>
+    <hr class="p-1 bg-primary">
+    <h4>label için form-label ve input için form-control kullanımı</h4>
+    <form action="">
+        <div class="mb-2">
+            <label for="inputEmail" class="form-label">
+                Email address
+            </label>
+            <input type="email" class="form-control" id="inputEmail">
+            <div class="form-text">Your email will be secret</div>
+        </div>
+        <div class="mb-2">
+            <label for="inputPassword" class="form-label">
+                Passsword
+            </label>
+            <input type="password" class="form-control" id="inputPassword">
+        </div>
+        <h4>checkbox için dive form-check inputa form-check-input labele form-check-label verilir</h4>
+        <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="inputCheck">
+            <label for="inputCheck" class="form-check-label">Check me Out</label>
+        </div>
+        <div class="mb-2">
+            <h4>buton direk button ile oluşturulur type submit yapılır btn btn-primary</h4>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+
+    <hr>
+    <hr>
+
+    <h4>Disabled form için form içine filedset oluşturup disabled diyorsun</h4>
+
+    <form action="">
+        <fieldset disabled>
+            <legend>Disablet fieldset</legend>
+            <div class="mb-3">
+                <label for="" class="form-label">disabled input</label>
+                <input type="text" class="form-control" placeholder="Disabled input">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">disabled select</label>
+                <select name="" id="" class="form-select">
+                    <option value="">Select</option>
+                    <option value="">Amasya</option>
+                </select>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input">
+                <label for="" class="form-check-label">can't check</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <hr>
+    <hr>
+
+    <h2>Form Control</h2>
+    <hr class="p-1 bg-primary">
+
+    <h4>inputlara textarealara form-control verilir labellere form-label checkboxlara form-check-input form-check-label
+        verilir</h4>
+
+    <form action="">
+        <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input type="email" placeholder="example@gmail.com" class="form-control">
+        </div>
+    </form>
+
+    <hr>
+    <hr>
+
+    <h4><b>Sizing</b> || form-control form-control-sm küçük form-control-lg büyük form-control kutuları oluşturur</h4>
+
+    <form action="">
+        <input type="text" class="form-control form-control-sm mb-2" placeholder="form-control form-control-sm">
+        <input type="text" class="form-control mb-2" placeholder="form-control">
+        <input type="text" class="form-control form-control-lg mb-2" placeholder="form-control form-control-lg">
+    </form>
+    <hr>
+    <hr>
+    <h4><b>disabled ve readonly</b> || ilgili inputa veya fieldset e verilirler disabled tıklanamaz readonly tıklanamaz
+        fakat normal görünüm yazı sönük deil</h4>
+
+    <form action="">
+        <input type="text" class="form-control mb-2" disabled value="disabled">
+        <input type="text" class="form-control" readonly value="readonly tıklanabilir ama sadece okumak için">
+    </form>
+
+    <hr>
+    <hr>
+
+    <h4>dive row deyip labele col-sm-2 col-form-label altınada inputu div col-sm-10 a koyarak yanyana form oluşturulur
+    </h4>
+
+    <form action="">
+        <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+    </form>
+
+    <hr>
+    <hr>
+
+    <h4>inputun type="file" diyerek dosya aktarımı inputu konulabilir</h4>
+
+    <input type="file" class="form-control">
+    <input type="file" class="form-control" multiple>
+    <h4>inputun type="color" diyerek color picker inputu konulabilir</h4>
+    <input type="color" class="form-control form-control-color" value="#563d7c">
+
+    <hr>
+    <hr>
+
+    <h2>Select</h2>
+    <hr class="p-1 bg-primary">
+
+    <h4>select için form-select kullanılır form-select-sm ve form-select-lg ile boyutları ayarlanır multiple ile birden
+        çok seçme işlemi yapılabilir</h4>
+    <select class="form-select" multiple aria-label="multiple select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <select class="form-select" size="3" aria-label="size 3 select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <h4>disabled ile disabled select oluşturulabilir</h4>
+    <hr>
+    <hr>
+    <h2>Checkbox</h2>
+    <hr class="p-1 bg-primary">
+
+    <h4>div oluşturulup form-check verilir altındaki inputa checkbox typesi veirlir ve class olarak form-check-input
+        verilir. Altına label oluşturulur ve form-check-label sınıfı veirlir</h4>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+            Indeterminate checkbox
+        </label>
+    </div>
+
+    <h4>radio içinde aynı şekilde form-check form-check-input ve form-check-label kullanılır fakat input typesine radio
+        denir ve namesine aynı nameler atanır</h4>
+    <h4>checked diyerek checklenmiş şekilde gelir</h4>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Default radio
+        </label>
+    </div>
+    <div class="form-check">
+
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+            Default checked radio
+        </label>
+    </div>
+
+    <h4>div e form-check deyip birde form-switch dersek açma kapama tuşu gibi olur</h4>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+            Indeterminate checkbox
+        </label>
+    </div>
+
+    <hr>
+    <hr>
+
+    <h2>Range</h2>
+    <hr class="p-1 bg-primary">
+
+    <h4>input type="range" diyerek elde edilir classı form-range .... min="0" max="5" step="0.5" gibi ek özellikleri var
+    </h4>
+
+    <div class="form-group">
+        <input type="range" class="form-range" min="0" max="20" step="2">
+    </div>
+
+    <h2>Input-Group</h2>
+    <hr class="p-1 bg-primary">
+
+    <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control">
+    </div>
+    <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control"></textarea>
+      </div>
+    <label for="basic-url" class="form-label">Your vanity URL</label>
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    </div>
+
+    <h2>Layout</h2>
+    <hr class="p-1 bg-primary">
+    
+    <h4>dış div e row içtekilere col diyerek yapılır yanyana koyma vs kolay olur</h4>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

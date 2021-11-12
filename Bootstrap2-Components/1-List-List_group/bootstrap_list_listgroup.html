@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap List-List Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="w-75 mx-auto my-4">
+
+    <h4>list-unstyled</h4>
+    <ul class="list-unstyled">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <br><br>
+    <h4>ul ye list-inline li'lerede list-inline-item</h4>
+    <ul class="list-inline">
+        <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-inline-item">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>ul ye list-group li'lere list-group-item</h4>
+    <ul class="list-group">
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>active item ekleme list groupta <br>ilgili li ye active sınıfı eklenir <br>disabled içinde ilgili li ye disabled
+        eklenir</h4>
+
+    <ul class="list-group w-25">
+        <li class="list-group-item active">Active Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+        <li class="list-group-item disabled">Disabled Lorem, ipsum dolor.</li>
+        <li class="list-group-item active">Active Lorem, ipsum dolor.</li>
+        <li class="list-group-item">Lorem, ipsum dolor.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>liste içinde a etiketlerini gruplama ul ye list-group ver a lara list-group-item list-group-item-action</h4>
+    <ul class="list-group w-25">
+        <a href="" class="list-group-item list-group-item-action active">lorem</a>
+        <a href="" class="list-group-item list-group-item-action">lorem</a>
+        <a href="" class="list-group-item list-group-item-action">lorem</a>
+        <a href="" class="list-group-item list-group-item-action">lorem</a>
+        <a href="" class="list-group-item list-group-item-action disabled">lorem</a>
+    </ul>
+
+    <br><br>
+
+    <h4>ul ye list-group ve list-group-flush ekleyerek sağ ve solda bordersiz liste grubu</h4>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>li lere list-group-item-primary vb diyerek renk verilebilir</h4>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item list-group-item-secondary">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item list-group-item-danger">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item list-group-item-warning">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>numered list oluşturmak için ul ye list-group-numbered verilir</h4>
+
+    <ul class="list-group list-group-numbered">
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>horizontal gruplamak için ul ye list-group list-group-horizontal veirlir</h4>
+
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+        <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <br><br>
+
+    <h4>badge kullanarak yazı ve numara koymalı list group</h4>
+
+    <ul class="list-group w-25">
+        <li class="list-group-item d-flex justify-content-between align-items-center">Lorem, ipsum dolor.
+            <span class="badge bg-primary rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Lorem, ipsum dolor.
+            <span class="badge bg-primary rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">Lorem, ipsum dolor.
+            <span class="badge bg-primary rounded-pill">14</span>
+        </li>
+    </ul>
+
+    <br><br>
+
+    <h4>güzel bir content box</h4>
+
+    <ul class="list-group w-50">
+        <a href="" class="list-group-item list-group-item-action active">
+            <div class="d-flex justify-content-between">
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <small>3 days ago</small>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste.
+            </p>
+            <small>Lorem, ipsum dolor.</small>
+        </a>
+        <a href="" class="list-group-item list-group-item-action">
+            <div class="d-flex justify-content-between">
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <small>3 days ago</small>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste.
+            </p>
+            <small>Lorem, ipsum dolor.</small>
+        </a>
+        <a href="" class="list-group-item list-group-item-action disabled">
+            <div class="d-flex justify-content-between">
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <small>3 days ago</small>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, iste.
+            </p>
+            <small>Lorem, ipsum dolor.</small>
+        </a>
+    </ul>
+
+
+    <br><br>
+
+    <h4>inputlarla kullanma checkbox-radio</h4>
+
+    <ul class="list-group w-25">
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox">First Checkbox
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox">Seond Checkbox
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox">Third Checkbox
+        </li>
+    </ul>
+    <h4>yukardakinde li ler yerine labelde kullansan bişey farketmiyor</h4>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
